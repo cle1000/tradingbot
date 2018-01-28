@@ -1,0 +1,44 @@
+{
+  "name": "tradingbot",
+  "version": "1.0.0",
+  "description": "Trading bot for parallel trading of multiple cryptocurrencies" ,
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "node bot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cle1000/tradingbot"
+  },
+  "keywords": [
+    "tradingbot", "trade", "bot", "multiple cryptocurrencies", "exchange"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "nodemon": "^1.12.1",
+    "redux-devtools": "^3.4.1",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "bitfinex-api-node": "^1.2.1",
+    "body-parser": "^1.15.2",
+    "chalk": "^2.3.0",
+    "file-system": "^2.2.2",
+    "lodash": "^4.17.4",
+    "moment": "^2.19.3",
+    "mongojs": "^2.4.1",
+    "morgan": "^1.9.0",
+    "node-telegram-bot-api": "^0.30.0",
+    "random-ext": "^2.6.1",
+    "redux": "^3.7.2",
+    "retry": "^0.10.1",
+    "sleep": "^5.1.1"
+  },
+  "engines": {
+    "node": ">=6.0"
+  }
+}
